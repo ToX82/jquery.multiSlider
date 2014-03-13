@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>jQuery.multiSlider</title>
+	
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.2/themes/base/jquery-ui.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<div align="center" class="title">Statistiche:</div>
+
+<div id="outer_container">
+  <div id="container">
+    <span class='multislider'>
+    
+      Hokuto ShinKen (<input type='text' name='question' class='amount' value='0' data-min='0' data-max='100'/>)
+      <div class='slider tied'></div>
+      
+      Nanto (<input type='text' name='question' class='amount' value='0' data-min='0' data-max='100'/>)
+      <div class='slider tied'></div>
+      
+      Gento (<input type='text' name='question' class='amount' value='0' data-min='0' data-max='100'/>)
+      <div class='slider tied'></div>
+      
+      Artiglio del Monte Taishan (<input type='text' name='question' class='amount' value='0' data-min='0' data-max='100'/>)
+      <div class='slider tied'></div>
+      
+      Hokuto Liu (<input type='text' name='question' class='amount' value='0' data-min='0' data-max='100'/>)
+      <div class='slider tied'></div>
+      
+      Hokuto Sun (<input type='text' name='question' class='amount' value='0' data-min='0' data-max='100'/>)
+      <div class='slider tied'></div>
+      
+      Hokuto Cao (<input type='text' name='question' class='amount' value='0' data-min='0' data-max='100'/>)
+      <div class='slider tied'></div>
+      
+    </span>
+  </div>
+</div>
+
+
+<script type='text/javascript' src='//code.jquery.com/jquery-1.9.1.js'></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+<script type='text/javascript' src='js/jquery.multislider.js'></script>
+<script type='text/javascript'>
+  $(window).load(function() {
+    $('#container').multiSlider({
+      'sliders': $(".slider.tied"),
+      'max': 100,
+      'speed': 1000,
+      'debug': false
+    });
+  });
+</script>
+  
+</body>
+</html>
