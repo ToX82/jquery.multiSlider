@@ -15,7 +15,6 @@
         };
         if (options) { $.extend(config, options); }
 
-        var $this = this.selector;
         var sliders = config.sliders,
             max = config.max,
             speed = config.speed,
