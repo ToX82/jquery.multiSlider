@@ -1,3 +1,5 @@
+[![Code Climate](https://codeclimate.com/github/ToX82/jquery.multiSlider/badges/gpa.svg)](https://codeclimate.com/github/ToX82/jquery.multiSlider)
+
 jquery.multiSlider
 ==================
 
