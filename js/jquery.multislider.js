@@ -13,11 +13,10 @@
                 'speed': "fast",
                 'debug': false
         };
-        $this = this.selector;
-        if (options) $.extend(config, options);
+        if (options) { $.extend(config, options); }
 
-        var init = true,
-            sliders = config.sliders,
+        var $this = this.selector;
+        var sliders = config.sliders,
             max = config.max,
             speed = config.speed,
             debug = config.debug,
@@ -40,7 +39,7 @@
                 max: localmax,
                 range: range,
                 animate: speed,
-                create: function (event, ui) {
+                create: function () {
                     if (InitMod > 0) {
                         $(this).slider('value', initValue + 1);
                         $(this).prev('.amount').val(initValue + 1);
@@ -63,7 +62,7 @@
                     });
 
                     total += ui.value;
-                    if (total != max) {
+                    if (total !== max) {
                         proceed = true;
                     }
 
@@ -94,7 +93,7 @@
                                 } else {
                                     counter = counter - 1;
                                 }
-                            } while (counter == current);
+                            } while (counter === current);
 
                             if (debug) {
                                 console.log("elemento attuale: " + counter);
